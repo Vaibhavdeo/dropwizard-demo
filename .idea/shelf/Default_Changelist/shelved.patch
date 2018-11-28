@@ -1,0 +1,21 @@
+Index: config.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>logging:\r\n  level: INFO\r\n  loggers:\r\n    com.drop.sample: DEBUG\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- config.yml	(revision c0fe91d9537f7309d43bf4c8867831c227932f6d)
++++ config.yml	(date 1543398314313)
+@@ -2,3 +2,11 @@
+   level: INFO
+   loggers:
+     com.drop.sample: DEBUG
++
++server:
++  applicationConnectors:
++    - type: http
++      port: 9000
++  adminConnectors:
++    - type: http
++      port: 9001
