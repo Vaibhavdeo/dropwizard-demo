@@ -26,7 +26,7 @@
           <transformers>
             <transformer />
             <transformer>
-              <mainClass>com.drop.sample.sample_drop.DropApplication</mainClass>
+              <mainClass>com.sample.drop.app.DropApplication</mainClass>
             </transformer>
           </transformers>
           <filters>
@@ -116,7 +116,7 @@
   </dependencyManagement>
   <properties>
     <dropwizard.version>1.3.7</dropwizard.version>
-    <mainClass>com.drop.sample.sample_drop.sample-dropApplication</mainClass>
+    <mainClass>com.sample.drop.app.DropApplication</mainClass>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
