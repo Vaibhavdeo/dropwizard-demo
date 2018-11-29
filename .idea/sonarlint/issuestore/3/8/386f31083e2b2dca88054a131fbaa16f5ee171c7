@@ -1,0 +1,6 @@
+
+†squid:S1488"cImmediately return this expression instead of assigning it to the temporary variable "personList2".(¦³¶øÿÿÿÿ8ÔøÁÌõ,
+Vsquid:S1118
+":Add a private constructor to hide the implicit public one.(©Ê€Ÿùÿÿÿÿ
+[squid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8–ˆôÑõ,
+psquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(úü„ü
