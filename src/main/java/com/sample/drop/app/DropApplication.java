@@ -2,6 +2,8 @@ package com.sample.drop.app;
 
 import com.sample.drop.config.RestConfig;
 import com.sample.drop.controller.PersonController;
+import com.sample.drop.exception.ExceptionMapper;
+import com.sample.drop.exception.RestCustomException;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -28,6 +30,8 @@ public class DropApplication extends Application<RestConfig> {
     	        environment.jersey().register(new PersonController());
 
     	        environment.healthChecks().register("template",new RestHealthCheck());
+
+        environment.jersey().register(new ExceptionMapper());
     }
 
 }

@@ -1,7 +1,6 @@
 package com.sample.drop.repositories;
 
 import com.sample.drop.entities.Person;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -24,15 +23,6 @@ public class PersonDB {
     }
 
     public static List<Person> getAll() {
-        //List<Person> personList = new ArrayList<>();
-
-        //Using Foreach
-        /*persons.forEach((k, v) -> {
-            personList.add(persons.get(k));
-        });*/
-        /*
-        Using Stream API to convert map to list
-         */
         List<Person> personList2 = persons.values().stream().collect(Collectors.toList());
         return personList2;
     }

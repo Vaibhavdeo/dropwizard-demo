@@ -10,7 +10,7 @@ public class RestHealthCheck extends HealthCheck {
         if (PersonDB.getCount() == 0) {
             return Result.unhealthy("No persons in DB! Version: " );
         }
-        return Result.healthy("OK with version: "  +
+        return Result.healthy("OK "  +
                 ". Persons count: " + PersonDB.getCount());
     }
 }
